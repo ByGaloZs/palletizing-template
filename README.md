@@ -26,6 +26,19 @@ This repository will serve as the base for a future restructured version, with t
 - Doosan robot controller
 - Basic knowledge of DRL programming
 
+## Manual Setup
+
+Before running the script, the first two pallet positions must be taught manually using the robot teach pendant. These positions are critical for the script to calculate the full palletizing pattern.
+
+Specifically:
+
+- **First position**: Bottom-left corner of the first row (position 1)
+- **Second position**: Next position in the same row (position 2)
+
+These two positions define the spacing between boxes and the orientation of the pattern. The script uses them to calculate all subsequent positions dynamically.
+
+Make sure to teach these points using the correct user coordinate frame (e.g., `user_coordinates_101`) as referenced in the script.
+
 ## Author
 
 Developed by [Mario Padilla](https://github.com/ByGaloZs), Mechatronics Engineer with professional experience in industrial robotics and automation.
