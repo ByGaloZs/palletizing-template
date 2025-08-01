@@ -28,16 +28,15 @@ This repository will serve as the base for a future restructured version, with t
 
 ## Manual Setup
 
-Before running the script, the first two pallet positions must be taught manually using the robot teach pendant. These positions are critical for the script to calculate the full palletizing pattern.
+Before running the script, you must manually teach all positions of the first and second pallet layers using the robot teach pendant. These positions are critical for the script to calculate the complete palletizing pattern.
 
 Specifically:
 
-- **First position**: Bottom-left corner of the first row (position 1)
-- **Second position**: Next position in the same row (position 2)
+- **First layer (Pattern A)**: Teach all 9 positions of the first pallet layer.
+- **Second layer (Pattern B)**: Teach all 9 positions of the second pallet layer.
 
-These two positions define the spacing between boxes and the orientation of the pattern. The script uses them to calculate all subsequent positions dynamically.
-
-Make sure to teach these points using the correct user coordinate frame (e.g., `user_coordinates_101`) as referenced in the script.
+These two layers define the box spacing, rotation, and orientation rules for alternating patterns. The script uses them to generate all remaining layers dynamically.
+Make sure to teach these positions using the correct user coordinate frame (e.g., user_coordinates_101) as referenced in the script.
 
 ## Author
 
