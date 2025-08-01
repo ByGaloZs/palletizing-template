@@ -18,7 +18,8 @@ This repository will serve as the base for a future restructured version, with t
 
 - Migrate the logic to an **object-oriented Python project**.
 - Enable integration with tools such as **ROS**.
-- Design a scalable architecture for flexible and reconfigurable palletizing systems.
+- Design a **scalable architecture** for flexible and reconfigurable palletizing systems.
+- **Eliminate the need to teach the first two pallet layers manually** by dynamically generating all initial positions using the box dimensions and pallet layout configuration.
 
 
 ## Requirements
